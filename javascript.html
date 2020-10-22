@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+JavaScript
+    </title>
+    
+    <script>
+
+
+        function myfunction(){
+
+
+        var values="";
+
+        var first=prompt("Enter the first number",values);
+        var second=prompt("Enter the second value",values);
+        var result=eval(Number(first)*Number(second));
+        
+
+        
+        document.getElementById('jdemo').innerHTML="First Value = <br>"+first+" Second Value ="+second+" Result = "+result;
+        
+
+        }
+
+
+        function addition(){
+            var firstval=document.getElementById('textbox1').value;
+            var secondval=document.getElementById('textbox2').value;
+            var result=Number(firstval)+Number(secondval);
+            document.getElementById('res').innerHTML = result;
+            alert("Added SUCCESS");
+ 
+        }
+
+
+        function increment(){
+           
+          var a=5;
+          var b=0;
+          var c=11;
+          
+          alert((a==2)||(b==0));
+
+            }
+
+
+
+        function loop(){
+
+            var number=1;
+            
+            
+
+                for(var i=0;i<20;)
+                {
+                    
+                    document.write("2 * "+number+"="+i+"<br>");
+                    i+=2;
+                    number++;
+                    
+
+                } 
+              
+
+
+        }
+
+
+        function htm(){
+
+            var text="";
+            var number=1;
+
+            for (var i=3;i<30;)
+            {
+
+            text+="3 * "+number+" ="+i+"<br>";
+            i+=3;
+            number++;
+
+            }
+
+            document.getElementById('demo').innerHTML=text;
+
+
+
+
+
+        }
+
+
+function arr1(){
+
+    
+// index 0 = ms ofiice
+// index 1=html.....
+
+  var subject=["Ms office","Html","UI UX","BootStrap","JAVA"];
+  var cars=["BMW","CIVIC","HONDA CITY","ALTO"];
+ 
+        var test="";
+        for(var i=0;i<4;i++)
+        {
+           
+            test+=cars[i]+"<br>";
+
+        }
+        document.write(test);
+ 
+ 
+
+   
+
+
+}
+
+        function ifelse()
+        {
+            var values="";
+            var testvalue=prompt("ENTER YOUR AGE ", values);
+
+            if(testvalue > 18)
+            {
+                alert("User Allowed");
+            }
+            else
+            {
+                alert("Not Allowed");
+            }
+
+        }
+
+        function add(a,b)
+        {
+            var values="";
+            var a=prompt("Enter 1st values",values);
+            var b=prompt("Enter 2nd values",values);
+            var res=Number(a)+Number(b);
+            document.write(res);
+        }
+
+
+        function checklocation(){
+
+                if(window.navigator.geolocation)
+                {
+                    alert("Location is supported in this browser");
+                    navigator.geolocation.getCurrentPosition(showPosition);
+
+                }
+                else
+                {
+                    alert("Location is not supported in this browser");
+                }
+
+
+        }
+
+        function showPosition(position){
+
+                alert('Latitude : '+position.coords.latitude + 'Longitude: ' +position.coords.longitude );
+
+        }
+
+
+      
+
+           
+            
+            
+    </script>
+</head>
+<body>
+   
+    <p id="demo"></p>
+    
+    <p id="dem"></p>
+
+
+
+
+
+
+<form>
+
+<button type="button" onclick="checklocation()">TEST</button>
+
+   
+   
+
+    
+
+   
+ 
+ </form>
+
+</body>
+
+</html>
